@@ -1,0 +1,47 @@
+.container{
+    height: auto;
+    background-color: #CFD2CF;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+.container div{
+    display: flex;
+    
+}
+.container div h2{
+    width: 100%;
+    font-size: 40px;
+    margin-top: 100px;
+}
+.container .cardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+
+}
+.container .cardContainer .card{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.container .cardContainer .card .img{
+    margin-bottom: 20px;
+}
+.container .cardContainer .card .icon{
+    color: #ECB390;
+}
+.container .cardContainer .card h3{
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.container .cardContainer .card p{
+    margin-bottom: 20px;
+    font-size: 30px;
+
+}
+

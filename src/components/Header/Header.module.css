@@ -1,0 +1,22 @@
+.container{
+    background-color: #F1F1F1;
+    height: 100px;
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container img{
+    height: 70%;
+    margin-left: 30px;
+    
+}
+.container a{
+    margin-left: 25px;
+    font-size: 30px;
+    text-decoration: none;
+}
