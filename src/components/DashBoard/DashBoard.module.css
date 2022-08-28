@@ -1,0 +1,49 @@
+.container{
+  display: inline;
+  flex-wrap: wrap;
+  border: 3px solid black; 
+  
+}
+.Card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: auto;
+}
+.layoutContainer{
+  width: 80vw;
+  margin-top: 20px;
+  
+}
+.PageView{
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.page{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  
+}
+.main{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.notifications{
+  height: 900px;
+  width: 600px;
+  background-color: white;
+  border-radius: 20px;
+  border:1px solid black;
+  margin-right: 40px;
+}
+.earning{
+  height: 900px;
+  width: 600px;
+  border-radius: 20px;
+  background-color: white;
+  border:1px solid black;
+}
+
+

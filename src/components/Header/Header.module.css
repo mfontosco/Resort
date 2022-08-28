@@ -6,7 +6,7 @@
     right: 0;
     top: 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -15,8 +15,18 @@
     margin-left: 30px;
     
 }
-.container a{
+.container .links{
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.container .links a{
     margin-left: 25px;
     font-size: 30px;
     text-decoration: none;
+}
+.logo{
+    border: 5px solid gold;
+    padding: 20px;
 }

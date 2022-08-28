@@ -1,5 +1,6 @@
 import React,{useContext} from 'react'
 import { GlobalContext } from '../../context'
+import styles from './Rooms.module.css'
 import Room from '../Room/Room'
 import {Link} from 'react-router-dom'
 
@@ -8,13 +9,13 @@ const Rooms = () => {
     const {filteredRooms} = useContext(GlobalContext)
     console.log(filteredRooms)
   return (
-    <div >
+    <div className={styles.container}>
         {/* <Header title='Available Rooms'/> */}
-   <div style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'wrap'}}>
+   <div className={styles.roomContainer} >
    {
         filteredRooms && filteredRooms.length > 0 ? filteredRooms.map((room) => <div key={room.id}> 
             
-        <img src={room.images[0]} alt={room.slug} width={200} height={200}/>
+        <img src={room.images[0]} alt={room.slug} />
         <h3>{room.name}</h3>
         <h3>{room.price}</h3>
         <Link to={`/rooms/${room.slug}`}>

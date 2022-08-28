@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../../context";
+import styles from './SearchRooms.module.css'
 
 const SearchRooms = () => {
   const {
@@ -38,7 +39,7 @@ const SearchRooms = () => {
   ));
 
   return (
-    <div>
+    <div className={styles.container}>
       <form>
         <div className="formGroup">
           <label htmlFor="type">Room type</label>

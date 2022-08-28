@@ -1,7 +1,37 @@
 .container{
     width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .container h2{
     font-size: 40px;
     margin-top: 100px;
 }
+.container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container form div{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container form div select{
+    padding:5px;
+    font-size: 24px;
+    margin-left: 5px;
+}
+.container form div label{
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.container form div input{
+    padding: 10px;
+    border-radius: 5px;
+}
+ .container form div input[type="checkbox"]{
+height: 20px;
+width: 20px;
+} 
