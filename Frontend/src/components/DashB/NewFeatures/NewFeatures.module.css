@@ -1,0 +1,23 @@
+.container{
+    height: 20vh;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1569450527912-af380a71fdeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YnViYmxlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.container h3{
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #277BC0;
+}
+.container h2{
+    color: #3E2C41;
+}

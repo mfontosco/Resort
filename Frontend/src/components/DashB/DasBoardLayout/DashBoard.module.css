@@ -1,0 +1,28 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(90deg, #eee, #dddddd, #dddd);;
+}
+.cardContainer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+
+}
+.cardContainer div h4{
+    width: 100%;
+    text-align: center;
+}
+.imageCardContainer{
+    width: 17vw;
+}
+.booklist{
+    height: 55vh;
+    margin-top: 100px;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #ffffff;
+
+}

@@ -1,0 +1,13 @@
+.container{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.container h1{
+    letter-spacing: 5px;
+    font-size: 70px;
+    font-weight: bold;
+}
