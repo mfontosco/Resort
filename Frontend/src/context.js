@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 
 const GlobalContext =React.createContext()
 const Provider = ({children}) => {
-  console.log(data)
+  
   const navigate = useNavigate()
   const [input, setInput] = useState({
     fName: "",
@@ -120,7 +120,7 @@ console.log(rooms)
         ...state,
         [name]:value
       })
-      let filteredRm =[...state.rooms]
+      let filteredRm = [...state.rooms]
       if(name === 'type' &&  value!=='all'){
 filteredRm = filteredRm.filter(room=>room.type === value)
       }

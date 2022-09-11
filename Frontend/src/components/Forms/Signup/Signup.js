@@ -1,6 +1,5 @@
-import React, { useState ,useContext} from "react";
+import React, { useContext} from "react";
 import styles from "./Signup.module.css";
-import { AiOutlineEyeInvisible } from "react-icons/ai";
 import { GlobalContext } from "../../../context";
 
 const Signup = () => {
@@ -14,7 +13,6 @@ const Signup = () => {
           <label>Full Name</label>
           <input
             type="text"
-            placeholder="Please enter your full name"
             name="fName"
             value={input.fName}
             onChange={onchangeHandler}
@@ -24,7 +22,6 @@ const Signup = () => {
           <label>Email</label>
           <input
             type="email"
-            placeholder="Please enter your email address"
             name="email"
             value={input.email}
             onChange={onchangeHandler}
@@ -34,7 +31,6 @@ const Signup = () => {
           <label>Password</label>
           <input
             type="password"
-            placeholder="Please enter your Password"
             name="password"
             value={input.password}
             onChange={onchangeHandler}

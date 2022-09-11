@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Header.module.css'
+import {FaBars} from 'react-icons/fa'
 
 const Header = () => {
   return (
@@ -13,7 +14,9 @@ const Header = () => {
       <Link to='/dashboard'>DashBoard</Link>
       <Link to='/booking'>Booking</Link>
      </div>
-     <div></div>
+     <div>
+      <FaBars size={50} className={styles.icon}/>
+     </div>
     </div>
   )
 }

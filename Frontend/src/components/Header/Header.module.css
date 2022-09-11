@@ -31,3 +31,60 @@
     border: 5px solid gold;
     padding: 20px;
 }
+.icon{
+    display: none;
+}
+@media (max-width: 480px) {
+    .container{
+        width: 100vw;
+       flex: 1; 
+    }
+    .logo{
+        border: 5px solid gold;
+        padding: 10px;
+    }
+    .icon{
+        display: block;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    .container .links{
+display: none;
+    }
+  }
+  @media (max-width: 1200px) {
+    .container{
+        width: 100vw;
+       flex: 1; 
+       box-shadow: 8px 10px 10px 10px rgba(0,0,0,0.5);
+       z-index:999px
+    }
+    .logo{
+        border: 5px solid gold;
+        padding: 10px;
+    }
+    .icon{
+        display: block;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    .container .links{
+display: none;
+    }
+  }
+  @media (max-width: 620px) {
+    .container{
+        width: 100vw;
+       flex: 1; 
+       box-shadow: 8px 10px 10px 10px rgba(0,0,0,0.5);
+       z-index:999px
+    }
+    .logo{
+        border: 5px solid gold;
+        padding: 10px;
+    }
+    
+    .container .links{
+display: none;
+    }
+  }

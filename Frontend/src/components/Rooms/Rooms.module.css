@@ -7,19 +7,112 @@
     justify-content:center;
     align-items:center;
     flex-wrap:wrap;
+    position: relative;
 }
 
 .container .roomContainer div{
-    width: 30%;
+    width: 30vw;
     height: auto;
-    border: 1px solid ;
+    box-shadow: 8px 10px 10px 10px rgba(0,0,0,0.5);
     margin: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 .container .roomContainer div img{
     width: 100%;
-    height: 100%;
+    
+}
+.container .roomContainer div .roomname{
+    text-align: center;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.container .roomContainer div .price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border: 1px solid black;
+    left: 0;
+    top: 0;
+    font-size: 24px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    border-bottom-right-radius: 30px;
 }
 .container .roomContainer div button{
-    padding: 10px;
+    padding: 20px;
     margin: auto;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    z-index: 999;
+    width: 250px;
+    font-size: 24px;
+    border: 3px solid #E6D2AA;
+    color: #C7956D;
+    text-transform: capitalize;
+    display: none;
 }
+.container .roomContainer div:hover{
+    opacity: 0.5;
+}
+.container .roomContainer div:hover button{
+    display: block;
+    cursor: pointer;
+}
+@media (max-width:480px) {
+    .container{
+        width: 100vw;
+        height: auto;
+        padding: 20px;
+    
+    }
+    .container .roomContainer{
+        display: flex;
+       flex-wrap: wrap;
+       flex-direction: column;
+       width: 100vw;
+    } 
+    .container .roomContainer div{
+        width: 100vw;
+        height: auto;
+        /* border: 1px solid ; */
+        margin-top: 10px;
+        padding: 10px;
+        box-shadow: 8px 10px 10px 10px rgba(0,0,0,0.5);
+    } 
+}
+@media (max-width:620px) {
+    .container{
+        width: 100vw;
+        height: auto;
+        padding: 20px;
+
+    
+    }
+    .container .roomContainer{
+        display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       width: 100vw;
+    } 
+    .container .roomContainer div{
+        width: 100vw;
+        height: auto;
+        border: 1px solid ;
+        margin-top: 10px;
+        padding: 10px;
+    } 
+}
+

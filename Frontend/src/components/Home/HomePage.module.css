@@ -6,8 +6,7 @@
      height: 100vh;
      width: 100%;
      opacity: 1;
-    
-     
+     max-width: 100%;   
 }
 .container .sectionCenter{
     display: flex;
@@ -43,7 +42,7 @@ box-shadow: 8px 10px 10px 1px rgba(0,0,0,0.5);
 .container .sectionCenter .modal h1{
     margin-top: 100px;
     margin-bottom: 50px;
-    font-size: 80px;
+    font-size: 50px;
     letter-spacing: 10px;
 }
 .container .sectionCenter .modal h3{
@@ -57,4 +56,91 @@ box-shadow: 8px 10px 10px 1px rgba(0,0,0,0.5);
 }
 .container .sectionCenter .underline hr{
     background-color: #af9a7d;
+}
+
+@media screen and (max-width:480px){
+    .container{
+        background-image: url("https://media.istockphoto.com/photos/tropical-vacation-background-picture-id1345069072?k=20&m=1345069072&s=612x612&w=0&h=CMW9O2ehKZMo7U7St4D5EYEg_TohFClqFMkLQV7vHII=");
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center;
+         height: 100vh;
+         width: 100vw;
+         opacity: 1; 
+    }
+    .container .sectionCenter .modal h1{
+        margin-top: 100px;
+        margin-bottom: 50px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .container .sectionCenter .modal button{
+        background-color:#af9a7d ;
+        padding: 15px ;
+        font-size: 20px;
+        letter-spacing: 5px;
+        font-weight: bold;
+    }
+    .container .sectionCenter .modal{
+        width: 70%;
+        height: 60%;
+         background: rgba(10%, 011%, 100%, .5);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 8px 10px 10px 1px rgba(0,0,0,0.5);
+        
+        
+        }
+        .container .sectionCenter .modal h3{
+            font-size: 20px;
+            letter-spacing: 10px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+}
+
+@media screen and (max-width:1200px){
+    .container{
+        background-image: url("https://media.istockphoto.com/photos/tropical-vacation-background-picture-id1345069072?k=20&m=1345069072&s=612x612&w=0&h=CMW9O2ehKZMo7U7St4D5EYEg_TohFClqFMkLQV7vHII=");
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center;
+         height: 100vh;
+         width: 100vw;
+         opacity: 1; 
+    }
+    .container .sectionCenter .modal h1{
+        margin-top: 100px;
+        margin-bottom: 50px;
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    .container .sectionCenter .modal button{
+        background-color:#af9a7d ;
+        padding: 15px ;
+        font-size: 20px;
+        letter-spacing: 5px;
+        font-weight: bold;
+    }
+    .container .sectionCenter .modal{
+        width: 70%;
+        height: 60%;
+         background: rgba(10%, 011%, 100%, .5);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 8px 10px 10px 1px rgba(0,0,0,0.5);
+        
+        
+        }
+        .container .sectionCenter .modal h3{
+            font-size: 20px;
+            letter-spacing: 10px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
 }

@@ -1,4 +1,4 @@
-import React,{useState,useContext} from 'react'
+import React,{useContext} from 'react'
 import styles from './Login.module.css'
 import { GlobalContext } from '../../../context'
 
@@ -15,7 +15,6 @@ const Login = () => {
           <label>Email</label>
           <input
             type="email"
-            placeholder="Please enter your email address"
             name="email"
             value={input.email}
             onChange={onchangeHandler}
@@ -25,7 +24,6 @@ const Login = () => {
           <label>Password</label>
           <input
             type="password"
-            placeholder="Please enter your Password"
             name="password"
             value={input.password}
             onChange={onchangeHandler}
@@ -39,7 +37,7 @@ const Login = () => {
           </p>
         </div>
         <div>
-          <button type='submit'>Create an account</button>
+          <button type='submit'>Login</button>
         </div>
       </form>
     </div>

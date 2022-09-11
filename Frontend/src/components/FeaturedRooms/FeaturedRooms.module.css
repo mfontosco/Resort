@@ -14,6 +14,7 @@
 .container .cardsContainer{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     padding:10px;
 }
 .container .cardsContainer .cards:hover{
@@ -21,8 +22,8 @@
 }
 .container .cardsContainer .cards{
     position: relative;
-    width: 25%;
-    height: 400px;
+    flex: 1;
+    height: auto;
     border: 1px solid black;
     background-color: azure;
     box-shadow: 8px 10px 10px 1px rgba(0,0,0,0.5);
@@ -77,3 +78,56 @@
     color: white;
     border-bottom-right-radius: 30px;
 }
+
+@media (max-width: 480px) {
+    .container{
+        width: 100vw;
+        height: auto;
+       display: flex;
+       flex-direction: column;
+    }
+    .container .cardsContainer{
+      display: flex;
+      flex-direction: column;
+    }
+    .container .cardsContainer .cards{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+  }
+  @media (max-width: 1200px) {
+    .container{
+        width: 100vw;
+        height: auto;
+       display: flex;
+       flex-direction: column;
+    }
+    .container .cardsContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .container .cardsContainer .cards{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+    .container .cardsContainer .cards{
+        position: relative;
+        
+        height: 400px;
+        flex: 1;
+        border: 1px solid black;
+        background-color: azure;
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+        opacity: 1;
+    }
+  }

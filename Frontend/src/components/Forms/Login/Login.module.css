@@ -8,7 +8,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    flex: 2;
+    flex: 1;
 }
 .container form{
     flex: 1;
@@ -17,6 +17,11 @@
     flex-direction: column;
     align-items: center;
 
+}
+.container form h2 {
+font-size: 40px;
+font-weight: bold;
+margin-bottom: 20px;
 }
 .container form div{
     display: flex;
@@ -28,12 +33,19 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .container form .checkbox input{
     margin-top: 40px;
+    font-size: 30px;
+}
+.container form .checkbox input{
+    margin-right: 10px;
 }
 .container form div label{
     margin-bottom: 10px;
+    font-weight: bold;
+
 }
 .container form div input{
     margin-bottom: 40px;
